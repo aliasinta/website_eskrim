@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesanan Berhasil</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card{
+      width: 360px;
+      background: white;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    /* Bagian Atas (Pink) */
+    .top-section {
+      background: #ffcce5;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    .total-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .total-title {
+      color: #333;
+    }
+
+    .total-price {
+      color: #000;
+      font-weight: 900;
+    }
+
+    /* Tombol Lanjut ke Checkout */
+    .btn-checkout {
+      background: #ff2e4d;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      display: block;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      width: 100%;
+      border: none;
+    }
+
+    /* Bagian Konten Bawah (Putih) */
+    .content{
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    .thanks-text {
+      font-size: 14px;
+      color: #333;
+      line-height: 20px;
+      margin-bottom: 35px;
+    }
+
+    .info-group {
+      text-align: left;
+      font-size: 13px;
+      color: #333;
+      line-height: 22px;
+    }
+
+    .info-item {
+      margin-bottom: 20px;
+    }
+
+    .status-text {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+
+
+    <div class="content">
+      <h2>PESANAN BERHASIL!!</h2>
+      
+      <p class="thanks-text">
+        Terimakasih telah memesan es krim favoritmu
+      </p>
+
+      <div class="info-group">
+        <div class="info-item">
+          No.pesanan<br>
+          <strong>#IC076444</strong>
+        </div>
+
+        <div class="info-item">
+          Pembayaran Tunai<br>
+          Total : Rp.150.000
+        </div>
+
+        <div class="info-item">
+          Status: <span class="status-text">Sedang DiProses</span><br>
+          Silahkan lakukan pembayaran di kasir saat mengambil pesanan.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

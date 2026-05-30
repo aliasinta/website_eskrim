@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container aplikasi (sesuaikan dengan class .app milik Anda jika ada) */
+        .app {
+            width: 375px;
+            height: 812px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .keranjang-content {
+            padding: 20px;
+        }
+
+        .title-keranjang {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Card Item Belanja */
+        .cart-item {
+            background-color: #ffd2e2; /* Pink pastel sesuai Figma */
+            border-radius: 15px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cart-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cart-img {
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Mengarahkan ke file bg cream.png Anda */
+        .cart-img img {
+            width: 80%;
+            object-fit: contain;
+        }
+
+        .cart-detail p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 4px;
+        }
+
+        .cart-detail span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Tombol Plus Minus Quantity (Qty) */
+        .qty-control {
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 8px;
+            gap: 4px;
+        }
+
+        .qty-btn {
+            background: none;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+            color: #ff6b81;
+        }
+
+        /* Bagian Total Bawah (Footer) */
+        .cart-footer {
+            background-color: #fcc2ea; /* Pink footer sesuai Figma */
+            padding: 25px 20px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .total-box {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 900;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #000;
+        }
+
+
+        .btn-selesai {
+            background-color: #e12e43;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    .btn {
+      background: #ff2e4d;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 100%;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+    </style>
+</head>
+<body>
+
+    <div class="app">
+        <div class="keranjang-content">
+            <p class="title-keranjang">Keranjang belanja anda</p>
+            
+            <div class="cart-item">
+                <div class="cart-info">
+                    <div class="cart-img">
+                        <img src="c:\Users\ACER INTEL\Downloads\alia sinta\bg cream.png" alt="Es Krim">
+                    </div>
+                    <div class="cart-detail">
+                        <p>Es krim sekup</p>
+                        <span>RP.30.000</span>
+                    </div>
+                </div>
+                <div class="qty-control">
+                    <button class="qty-btn">+</button>
+                    <span style="font-size: 12px; font-weight: bold;">05</span>
+                    <button class="qty-btn">-</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-box">
+                <span>TOTAL:</span>
+                <span>RP.150.000</span>
+            </div>
+            <a href="checkout.html" class="btn">Lanjut Ke checkout</a>
+        </div>
+    </div>
+
+</body>
+</html>

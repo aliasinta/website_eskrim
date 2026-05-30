@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Es Krim</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#f5f5f5;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+
+    .card{
+      width:360px;
+      background:white;
+      border-radius:30px;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .top{
+      background:#ffcce5;
+      height:330px;
+      position:relative;
+      text-align:center;
+    }
+
+    .top img{
+      width:250px;
+      margin-top:30px;
+    }
+
+    .content{
+      padding:30px;
+    }
+
+    h3{
+      color:red;
+      margin-bottom:5px;
+    }
+
+    h1{
+      color:#ff4d6d;
+      margin-bottom:20px;
+    }
+
+    .price{
+      color:red;
+      font-size:28px;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    .star{
+      color:pink;
+      font-size:30px;
+      margin-bottom:20px;
+    }
+
+    p{
+      line-height:28px;
+      color:#555;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      background:#ff2e4d;
+      color:white;
+      text-decoration:none;
+      padding:15px;
+      display:block;
+      text-align:center;
+      border-radius:30px;
+      font-size:18px;
+    }
+
+    /* Gaya untuk tombol tambah kurang baru */
+    .plus-container {
+      background: white;
+      border-radius: 30px;
+      position: absolute;
+      right: 20px;
+      bottom: -25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      gap: 15px;
+    }
+
+    .qty-btn {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #ff4d6d;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #jumlah-pesan {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      min-width: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="top">
+      <img src="c:\Users\ACER INTEL\Downloads\alia sinta\bg cream.png">
+
+  <div class="plus-container">
+    <button type="button" class="qty-btn" onclick="kurangData()">-</button>
+    <span id="jumlah-pesan">1</span>
+    <button type="button" class="qty-btn" onclick="tambahData()">+</button>
+  </div>
+</div>
+
+    <div class="content">
+
+      <h3>Es Krim</h3>
+
+      <h1>Stroberi</h1>
+
+      <div class="price">RP.30.000</div>
+
+      <div class="star">★★★★★</div>
+
+      <p>
+                Es krim stroberi punya rasa manis dan segar
+                yang membuat banyak orang menyukainya.
+            </p>
+            
+    <a href="keranjang.html" class="btn">Tambah Ke Keranjang</a>
+</div>
+
+    </div>
+
+  </div>
+  <script>
+    let angkaSekarang = 1;
+    const hargaSatuan = 30000; // Harga dasar Rp 30.000
+
+    function tambahData() {
+      angkaSekarang = angkaSekarang + 1;
+      
+      // Update angka jumlah pesanan
+      document.getElementById("jumlah-pesan").innerText = angkaSekarang;
+      
+      // Hitung total harga baru
+      let totalHarga = angkaSekarang * hargaSatuan;
+      
+      // Tampilkan harga dengan format titik manual agar aman (contoh: 60.000)
+      document.getElementById("harga-display").innerText = totalHarga.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    function kurangData() {
+      if (angkaSekarang > 1) {
+        angkaSekarang = angkaSekarang - 1;
+        
+        // Update angka jumlah pesanan
+        document.getElementById("jumlah-pesan").innerText = angkaSekarang;
+        
+        // Hitung total harga baru
+        let totalHarga = angkaSekarang * hargaSatuan;
+        
+        // Tampilkan harga dengan format titik manual agar aman
+        document.getElementById("harga-display").innerText = totalHarga.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
+    }
+  </script>
+</body>
+</html>
