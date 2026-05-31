@@ -238,30 +238,31 @@
 }
 
 </style>
-    <!-- NAVIGASI ATAS: MENU, JUDUL, KERANJANG -->
-<div class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; max-width: 90%; margin: 0 auto;">
+    <!-- NAVIGASI UTAS: MENU, JUDUL, KERANJANG -->
+<div style="display: flex; justify-content: space-between; align-items: center; width: 350px; margin: 20px auto 10px auto; padding: 0 10px;">
     <!-- Tombol Menu Garis Tiga -->
-    <div class="menu-icon" onclick="toggleMenu()" style="cursor: pointer; background: #EFA7B3; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;">
-        <i class="fa-solid fa-bars"></i>
+    <div class="menu-icon" onclick="toggleMenu()" style="cursor: pointer; background: #EFA7B3; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+        <i class="fa-solid fa-bars" style="font-size: 18px;"></i>
     </div>
 
-    <!-- Judul Aplikasi -->
-    <div class="logo-title" style="text-align: center; color: #BC2B3D; font-weight: bold; font-size: 22px; line-height: 1.2;">
+    <!-- Judul Tengah -->
+    <h2 style="color: #BC2B3D; font-size: 20px; font-weight: bold; text-align: center; margin: 0; line-height: 1.2;">
         Temukan rasa<br>Kesukaan mu
-    </div>
+    </h2>
 
-    <!-- Ikon Keranjang Belanja dengan Angka -->
-    <div class="cart-container" style="position: relative; display: inline-block; cursor: pointer; color: #BC2B3D;">
-        <i class="fa-solid fa-cart-shopping" style="font-size: 24px;"></i> 
-        <span id="cartCount" style="position: absolute; top: -10px; right: -10px; background: #BC2B3D; color: white; border-radius: 50%; padding: 2px 7px; font-size: 12px; font-weight: bold; display: none;">0</span>
+    <!-- Keranjang Belanja -->
+    <div class="cart-container" style="position: relative; cursor: pointer; color: #BC2B3D; background: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        <i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i> 
+        <span id="cartCount" style="position: absolute; top: -5px; right: -5px; background: #BC2B3D; color: white; border-radius: 50%; padding: 2px 6px; font-size: 10px; font-weight: bold; display: none;">0</span>
     </div>
 </div>
 
 <!-- KOTAK PENCARIAN -->
-<div class="search-box" style="display: flex; max-width: 90%; margin: 10px auto 20px auto; background: #F3D5DE; border-radius: 20px; overflow: hidden; align-items: center; padding-left: 15px;">
-    <i class="fa-solid fa-magnifying-glass" style="color: #666;"></i>
-    <input type="text" placeholder="Cari pilihan rasa es krim" style="flex: 1; border: none; background: transparent; outline: none; padding: 15px 10px; font-size: 16px;">
-    <button class="search-btn" style="border: none; background: #BC2B3D; width: 60px; height: 50px; cursor: pointer;"></button>
+<div class="search-box" style="display: flex; width: 330px; margin: 15px auto 25px auto; background: #F3D5DE; border-radius: 15px; overflow: hidden; align-items: center; padding-left: 15px; height: 50px;">
+    <i class="fa-solid fa-magnifying-glass" style="color: #BC2B3D; font-size: 16px;"></i>
+    <input type="text" placeholder="Cari pilihan rasa es krim" style="flex: 1; border: none; background: transparent; outline: none; padding: 10px; font-size: 14px; color: #BC2B3D;">
+    <div class="search-btn" style="background: #BC2B3D; width: 55px; height: 100%;"></div>
+</div>
 </div>
 
     <!-- CATEGORY -->
